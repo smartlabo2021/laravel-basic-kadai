@@ -18,9 +18,9 @@ use App\Models\Posts;
     }
   public function show($id){
     // URL'/products/{id}'の'{id}'部分と主キー（idカラム）の値が一致するデータをpostsテーブルから取得し、変数$postsに代入する
-    $posts = Posts::find($id);
+    $post = Posts::find($id);
 
      // 変数$postをposts/show.blade.phpファイルに渡す
-     return view('posts.show',compact('posts'));
+     return view('posts.show',compact('post'));
  }
 }
