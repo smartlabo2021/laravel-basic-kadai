@@ -13,10 +13,10 @@
             <th>title</th>
             <th>content</th>
         </tr>
-        @foreach ($products as $product)
+        @foreach ($post as $posts)
         <tr>
-            <td>{{$product->title}}</td>
-            <td>{{$product->content}}</td>
+            <td>{{$post->title}}</td>
+            <td>{{$post->content}}</td>
         </tr>
         @endforeach
     </table>
